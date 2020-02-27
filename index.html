@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Dashboard SpaceX</title>
-        
         <link type="text/css" rel="stylesheet" href="css/style.css" />
-        
+        <link type="text/css" rel="stylesheet" href="css/Chart.css" />
+        <script src="dist/gauge.min.js"></script>
+        <script src="js/Chart.js"></script>
     </head>
     <body>
         <header>
@@ -16,9 +17,7 @@
         </header>
         <main>
            <h1>Dashboard</h1>
-           <p>Welkom Elon, bij het SpaceX dashboard.</p> 
-           
-           
+           <p>Welkom Elon, bij het SpaceX dashboard.</p>
 <!--           Begin eerste vier feiten-->
            <section class="tijd">
               <img class="tijdicon" alt="tijd icoontje" src="images/icons/tijd%20tot%20aankomst.svg" />
@@ -45,24 +44,25 @@
            <section class="brandstofverbruik">
                <h2>Brandstof verbruik</h2>
                <section id="brandstofmeter"></section>
-               <p id="bmtext1"></p>
-               <p id="bmtext2">verbruikt</p>
-               <p id="bmtext3"></p>
-               <p id="bmtext4">verbruikt</p>
+               <div id="gauge1" class="gauge-container1">
+               </div>
            </section>
 <!--           Einde van brandstof verbruik-->
 <!--           Begin stroom gebruik-->
             <section class="stroomgebruik">
                <h2>Stroom gebruik</h2>
                <section id="stroommeter"></section>
-               <p id="smtext1"></p>
-               <p id="smtext2">verbruikt</p>
+               <div class="wrapper">
+                  <div id="gauge2" class="gauge-container two">
+                  </div>
+                    <section class="gauge-tekst"><p>in procenten</p></section>
+                </div>
             </section>
 <!--           Einde van stroom gebruik-->
 <!--           Begin Afstand-->    
             <section class="afstand">
                <h2>Afstand</h2>
-               <section id="afstandgrafiek"></section>
+               <div class="wrapper col-2"><canvas id="chart-2"></canvas></div>
                <p id="aftext1"></p>
                <p id="aftext2">afstand</p>
             </section>
@@ -80,6 +80,8 @@
             <h3>Gemaakt door Nino Jongmans</h3>
         </footer>
     </body>
+  <script src="js/gauge.js"></script>
+  <script src="js/grafiekafstand.js"></script>
 </html>
 
 
