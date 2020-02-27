@@ -9,6 +9,9 @@ body{
 	font-size: 10px;
 }
 
+h2{
+    font-size: 20pt;
+}
 
 /*Navigatie */
 
@@ -72,22 +75,49 @@ p{
     margin-right: 6%;
 }
 
-.tijdtekst2, snelheidtekst2, .brandstoftekst2, .watertekst2 {
+.tijdtekst2, .snelheidtekst2, .brandstoftekst2, .watertekst2 {
     float: right;
     font-size: 16pt;
-    position: absolute;
-    margin-left: 54%;
-    
+    padding-top: 80px;
+}
+
+.tijdtekst2 {
+    margin-right: -150px;
+}
+
+.snelheidtekst2, .brandstoftekst2, .watertekst2 {
+    float: right;
+    margin-right: -210px;
+}
+
+.brandstoftekst2 {
+    margin-right: -210px;
 }
 
 
+/*Begin brandstof verbruik*/
+.brandstofverbruik, .stroomgebruik, .afstand, .crew {
+    background-color: white;
+    margin-top: 150px;
+    padding: 40px;
+}
 
+.stroomgebruik, .afstand, .crew {
+    margin-top: 10%;
+}
 
+.crew {
+    margin-bottom: 20%;
+}
 
-
-
-
-
+footer{
+    background-color: black;
+    height: 80px;
+    font-size: 16pt;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
 
 
 
