@@ -133,36 +133,36 @@ footer{
         "stgebruik"           
         "afstand" 
         "crew";
-    grid-template-columns: 10)%;
+    grid-template-columns: 100%;
     grid-row-gap: 10px;
 }
 
 .brandstofverbruik {
         grid-area: brverbruik;
-        width: 92%;
-        padding: 4%;
+        width: 88%;
+        padding: 6%;
         margin-top: 50px;
     }
     
 .stroomgebruik {
         grid-area: stgebruik;
-        width: 92%;
-        padding: 4%;
+        width: 88%;
+        padding: 6%;
         margin-top: 50px;
         justify-self: end;
     }
     
 .afstand {
         grid-area: afstand;
-        width: 92%;
-        padding: 4%;
+        width: 88%;
+        padding: 6%;
         margin-top: 30px;
     }
     
 .crew {
         grid-area: crew;
-        width: 92%;
-        padding: 4%;
+        width: 88%;
+        padding: 6%;
         margin-top: 30px;
     }
 
@@ -174,6 +174,7 @@ footer{
 .wrapper {
   width: 100%;
   height: 200px;
+  margin-bottom: 30px;
 }
 .wrapper > .gauge-container {
   margin: 0;
@@ -230,81 +231,28 @@ b{
     font-size: 10pt;
 }
 
-.crewtabel {
-    display: flex;
-}
+ .brpr {
+        text-align: center;
+     margin-top: -170px;
+     font-weight: bold;
+    }
 
-.knopcrew1 {
-    float: right;
-    margin-top: -30px;
-}
-
-.knopcrew {
-    padding: 10px;
-    background-color: #0D7C7B;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.dik {
-    margin-top: 5%;
-    height: 3px;
-    background-color: #707070;
-}
-
-.dik1 {
-    margin-top: -2%;
-    height: 3px;
-    background-color: #707070;
-}
-
-.naam {
-    display: flex;
-    margin-top: 20px;
-    margin-left: 100px;
+.brve {
+    text-align: center;
     font-weight: bold;
+    font-size: 16pt;
+    margin-top: 180px;
 }
 
-.status {
-    display: flex;
-    float: right;
-    margin-top: -65px;
-    margin-right: 200px;
-    font-weight: bold;
+.brve2 {
+    text-align: center;
+    margin-top: -15px;
 }
 
-.pf {
-    height: 80px;
-    width: 80px;
-    border-radius: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: inline;
+.stroomgebruik > p{
+    text-align: left;
+    font-weight: normal;
 }
-
-.persoonnaam {
-    float: right;
-    margin-top: -70px;
-    margin-right: 480px;
-}
-
-.dik2{
-    color: black;
-    height: 3px;
-}
-
-.persoonnaam2 {
-    float: right;
-    margin-right: 480px;
-    margin-top: 40px;
-}
-
-
-
-
-
-
 
 
 
@@ -337,30 +285,30 @@ b{
     
     .brandstofverbruik {
         grid-area: brverbruik;
-        width: 89%;
-        padding: 4%;
+        width: 85%;
+        padding: 6%;
         margin-top: 50px;
     }
     
     .stroomgebruik {
         grid-area: stgebruik;
-        width: 89%;
-        padding: 4%;
+        width: 85%;
+        padding: 6%;
         margin-top: 50px;
         justify-self: end;
     }
     
     .afstand {
         grid-area: afstand;
-        width: 92%;
-        padding: 4%;
+        width: 88%;
+        padding: 6%;
         margin-top: 30px;
     }
     
     .crew {
         grid-area: crew;
-        width: 92%;
-        padding: 4%;
+        width: 88%;
+        padding: 6%;
         margin-top: 30px;
     }
     
@@ -375,8 +323,20 @@ b{
         grid-row-gap: 10px;
     }
     
+    .brpr{
+        margin-top: -100px;
+    }
     
-
+    .brve{
+        margin-top: 70px;
+    }
+    
+    .tijdicon, .snelheidicon, .brandstoficon, .watericon {
+    width: 17%;
+    margin-top: 15px;
+    margin-left: 6%;
+}
+  
     
 }
     
@@ -387,6 +347,10 @@ b{
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 2%;
+    }
+    
+    main > p {
+        margin-bottom: 20px;
     }
     
     .feiten{
@@ -428,31 +392,35 @@ b{
     
     .brandstofverbruik {
         grid-area: brverbruik;
-        padding: 4%;
-        width: 90%;
+        padding: 6%;
+        width: 86%;
     }
     
     .stroomgebruik {
         grid-area: stgebruik;
-        padding: 4%;
-        width: 90%;
+        padding: 6%;
+        width: 86%;
         margin-top: 25px;
     }
     
     .afstand {
         grid-area: afstand;
-        width: 90%;
-        padding: 4%;
+        width: 88%;
+        padding: 5%;
         margin-top: 50px;
         justify-self: end;
     }
     
     .crew {
         grid-area: crew;
-        width: 90%;
-        padding: 4%;
+        width: 86%;
+        padding: 6%;
         margin-top: 25px;
         justify-self: end;
+    }
+    
+    .afstand > h2 {
+        margin-top: -20px;
     }
     
     .data {
@@ -475,8 +443,29 @@ b{
     }
     
     .stroomgebruik > p {
-        margin-top: -60px;
+        margin-top: 0px;
     }
+    
+    .brpr {
+        margin-top: -80px;
+    }
+    
+    .brve {
+        margin-top: 70px;
+    }
+    
+    
+    
+.tijdicon, .snelheidicon, .brandstoficon, .watericon {
+    width: 25%;
+    margin-top: 15px;
+    margin-left: 6%;
+}
+    
+.tijdtekst, .snelheidtekst, .brandstoftekst, .watertekst {
+    font-size: 13pt;
+    margin-top: 20px;
+}
 }    
     
 
@@ -523,8 +512,8 @@ b{
     
     .brandstofverbruik {
         grid-area: brverbruik;
-        width: 90%;
-        padding: 3%;
+        width: 84%;
+        padding: 6%;
         margin-top: 50px;
     }
     
@@ -532,8 +521,8 @@ b{
         grid-area: stgebruik;
         margin-bottom: 0px;
         margin-top: 50px;
-        width: 90%;
-        padding: 3%;
+        width: 84%;
+        padding: 6%;
         justify-self: end;
     }
     
@@ -541,8 +530,8 @@ b{
         grid-area: afstand;
         margin-top: 50px;
         margin-right: 0px;
-        width: 90%;
-        padding: 3%;
+        width: 86%;
+        padding: 5%;
         justify-self: end;
     }
     
@@ -550,8 +539,8 @@ b{
         grid-area: crew;
         margin-top: 20px;
         margin-bottom: 0px;
-        width: 94%;
-        padding: 3%;
+        width: 90%;
+        padding: 5%;
     }
     
     .data {
@@ -570,7 +559,29 @@ b{
         margin-bottom: 0px;
     }
     
+    .brpr {
+        margin-top: -110px;
+    }
     
+    .brve {
+        margin-top: 80px;
+    }
+    
+    
+    .tijdicon, .snelheidicon, .brandstoficon, .watericon {
+    width: 25%;
+    margin-top: 15px;
+    margin-left: 6%;
+}
+    
+    .tijdtekst, .snelheidtekst, .brandstoftekst, .watertekst {
+    font-size: 14pt;
+    margin-top: 20px;
+}
+    
+    .afstand > h2 {
+        margin-top: -10px;
+    }
 }
 
 
