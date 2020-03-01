@@ -6,7 +6,7 @@
         <link type="text/css" rel="stylesheet" href="css/style.css" />
         <link type="text/css" rel="stylesheet" href="css/Chart.css" />
         <script src="dist/gauge.min.js"></script>
-        <script src="js/Chart.js"></script>
+        <script src="js/Chart.min.js"></script>
     </head>
     <body>
         <header>
@@ -19,62 +19,58 @@
            <h1>Dashboard</h1>
            <p>Welkom Elon, bij het SpaceX dashboard.</p>
 <!--           Begin eerste vier feiten-->
-           <section class="tijd">
-              <img class="tijdicon" alt="tijd icoontje" src="images/icons/tijd%20tot%20aankomst.svg" />
-               <p class="tijdtekst">9219 MIN</p>
-               <p class="tijdtekst2">tijd tot aankomst</p>
-           </section>
-           <section class="snelheid">
-               <img class="snelheidicon" alt="tijd icoontje" src="images/icons/Snelheid.svg" />
-               <p class="snelheidtekst">40.000 KM/H</p>
-               <p class="snelheidtekst2">Huidige snelheid</p>
-           </section>
-           <section class="brandstof">
-               <img class="brandstoficon" alt="tijd icoontje" src="images/icons/fuel.svg" />
-               <p class="brandstoftekst">698.306 Liter</p>
-               <p class="brandstoftekst2">Brandstof over</p>
-           </section>
-           <section class="water">
-               <img class="watericon" alt="tijd icoontje" src="images/icons/water.svg" />
-               <p class="watertekst">206.395 Liter</p>
-               <p class="watertekst2">Water over</p>
-           </section>
+           <section class="feiten">
+               <section class="tijd">
+                  <img class="tijdicon" alt="tijd icoontje" src="images/icons/tijd%20tot%20aankomst.svg" />
+                   <p class="tijdtekst">9219 MIN<br /><b>tijd tot aankomst</b></p>
+               </section>
+               <section class="snelheid">
+                   <img class="snelheidicon" alt="tijd icoontje" src="images/icons/Snelheid.svg" />
+                   <p class="snelheidtekst">40.000 KM/H<br /><b>Huidige snelheid</b></p>
+               </section>
+               <section class="brandstof">
+                   <img class="brandstoficon" alt="tijd icoontje" src="images/icons/fuel.svg" />
+                   <p class="brandstoftekst">698.306 Liter<br /><b>Brandstof over</b></p>
+               </section>
+               <section class="water">
+                   <img class="watericon" alt="tijd icoontje" src="images/icons/water.svg" />
+                   <p class="watertekst">206.395 Liter<br /><b>Water over</b></p>
+               </section>
+            </section>
 <!--           Einde van eerste vier feiten-->
 <!--           Begin brandstof verbruik-->
-           <section class="brandstofverbruik">
-               <h2>Brandstof verbruik</h2>
-               <section id="brandstofmeter"></section>
-               <div id="gauge1" class="gauge-container1">
-               </div>
-           </section>
-<!--           Einde van brandstof verbruik-->
-<!--           Begin stroom gebruik-->
-            <section class="stroomgebruik">
-               <h2>Stroom gebruik</h2>
-               <section id="stroommeter"></section>
-               <div class="wrapper">
-                  <div id="gauge2" class="gauge-container two">
-                  </div>
-                    <section class="gauge-tekst"><p>in procenten</p></section>
-                </div>
-            </section>
-<!--           Einde van stroom gebruik-->
-<!--           Begin Afstand-->    
-            <section class="afstand">
-               <h2>Afstand</h2>
-               <div class="wrapper col-2"><canvas id="chart-2"></canvas></div>
-               <p id="aftext1"></p>
-               <p id="aftext2">afstand</p>
-            </section>
-<!--           Einde van Afstand-->   
-<!--           Begin Crew-->   
-           <section class="crew">
-               <h2>Crew</h2>
-               <section id="crewtabel"></section>
-               <p id="crtext1"></p>
-               <p id="crtext2">crew</p>
-            </section>
-<!--           Einde van Crew-->               
+           <section class="data">
+                <section class="brandstofverbruik">
+                   <h2>Brandstof verbruik</h2>
+                   <section id="brandstofmeter"></section>
+                   <div id="gauge1" class="gauge-container1">
+                   </div>
+                </section>
+    <!--           Einde van brandstof verbruik-->
+    <!--           Begin stroom gebruik-->
+                <section class="stroomgebruik">
+                   <h2>Stroom gebruik</h2>
+                   <section id="stroommeter"></section>
+                   <div class="wrapper">
+                      <div id="gauge2" class="gauge-container two">
+                      </div>
+                    </div>
+                    <p>procent</p>
+                </section>
+    <!--           Einde van stroom gebruik-->
+    <!--           Begin Afstand-->    
+                <section class="afstand">
+                   <h2>Afstand</h2>
+                   <canvas id="afstandsGrafiek"></canvas>
+                </section>
+    <!--           Einde van Afstand-->   
+    <!--           Begin Crew-->   
+               <section class="crew">
+                   <h2>Crew</h2>
+                   <section class="knopcrew1"><a class="knopcrew" href="#">Bekijk iedereen</a></section>
+                </section>
+<!--           Einde van Crew-->  
+          </section>             
         </main>
         <footer>
             <h3>Gemaakt door Nino Jongmans</h3>
@@ -83,33 +79,3 @@
   <script src="js/gauge.js"></script>
   <script src="js/grafiekafstand.js"></script>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
