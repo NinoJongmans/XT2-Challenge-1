@@ -357,7 +357,18 @@ b{
     background-color: #707070;
     margin-top: 5px;
 }
-
+.oproepen {
+    display: none;
+}
+.oproepen1 {
+    display: none;
+}
+.oproepen2 {
+    display: none;
+}
+.oproepen3 {
+    display: none;
+}
 
 
 
@@ -439,6 +450,18 @@ b{
         width: 17%;
         margin-top: 15px;
         margin-left: 6%;
+    }
+    .oproepen {
+        display: none;
+    }
+    .oproepen1 {
+        display: none;
+    }
+    .oproepen2 {
+        display: none;
+    }
+    .oproepen3 {
+        display: none;
     }
 }
 
@@ -570,6 +593,18 @@ b{
     .knopcrew1 > a {
         font-size: 12px;
     }
+    .oproepen {
+        display: none;
+    }
+    .oproepen1 {
+        display: none;
+    }
+    .oproepen2 {
+        display: none;
+    }
+    .oproepen3 {
+        display: none;
+    }
 }    
 
 
@@ -691,4 +726,69 @@ b{
     .knopcrew1 > a {
         font-size: 14px;
     }   
+    .crewcontainer {
+        margin-top: 30px;
+        display: grid;
+        grid-template-areas: 
+            "lijn lijn lijn lijn"
+            ". naam status oproepen"
+            "lijn1 lijn1 lijn1 lijn1"
+            "pf1  naam1 status1 oproepen1"
+            "lijn2 lijn2 lijn2 lijn2"
+            "pf2 naam2 status2 oproepen2"
+            "lijn3 lijn3 lijn3 lijn3"
+            "pf3 naam3 status3 oproepen3"
+            "lijn4 lijn4 lijn4 lijn4";
+    }
+    .oproepen {
+        display: block;
+        grid-area: oproepen;
+        font-weight: bold;
+    }
+    .oproepen1 {
+        display: block;
+        grid-area: oproepen1;
+        width: 30px;
+        margin-top: 10px;
+    }
+    .oproepen1:hover, .oproepen2:hover, .oproepen3:hover {
+        width: 40px;
+        margin-top: 5px;
+    }
+    .oproepen2 {
+        display: block;
+        grid-area: oproepen2;
+        width: 30px;
+        margin-top: 10px;
+    }
+    .oproepen3 {
+        display: block;
+        grid-area: oproepen3;
+        width: 30px;
+        margin-top: 10px;
+    }
+    .oproepen3-1{
+        grid-area: oproepen3;
+    }
+    .oproepen2-1 {
+        grid-area: oproepen2;
+    }
+    .oproepen1-1 {
+        grid-area: oproepen1;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
