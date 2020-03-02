@@ -269,6 +269,153 @@ b{
     font-weight: normal;
 }
 
+.knopcrew1 {
+    float: right;
+    margin-top: -15px;
+}
+
+.knopcrew1 > a {
+    background-color: #0D7C7B;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.knopcrew1 > a:hover {
+    background-color: #86C1C0;
+}
+
+
+.crewcontainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: 
+        "lijn lijn lijn"
+        ". naam status"
+        "lijn1 lijn1 lijn1"
+        "pf1  naam1 status1"
+        "lijn2 lijn2 lijn2"
+        "pf2 naam2 status2"
+        "lijn3 lijn3 lijn3"
+        "pf3 naam3 status3"
+        "lijn4 lijn4 lijn4";
+}
+
+.lijn1 {
+    grid-area: lijn;
+    width: 100%;
+    height: 3px;
+    background-color: #707070;
+    margin-bottom: 5px;
+}
+
+.naam {
+    grid-area: naam;
+}
+
+.status {
+    grid-area: status;
+}
+
+.lijn2 {
+    grid-area: lijn1;
+    width: 100%;
+    height: 3px;
+    background-color: #707070;
+    margin-bottom: 5px;
+}
+
+.pficon {
+    grid-area: pf1;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.pfnaam {
+    grid-area: naam1;
+    margin-top: 15px;
+}
+
+.pfstatusA {
+    grid-area: status1;
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+    background-color: #0D7C7B;
+    color: white;
+    max-width: 36px;
+}
+
+.dunnelijn {
+    grid-area: lijn2;
+    width: 100%;
+    height: 3px;
+    background-color: #707070;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.pficon1 {
+    grid-area: pf2;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.pfnaam1 {
+    grid-area: naam2;
+    margin-top: 15px;
+}
+
+.pfstatusB {
+    grid-area: status2;
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+    background-color: red;
+    color: white;
+    max-width: 70px;
+}
+
+.dunnelijn1 {
+    grid-area: lijn3;
+    width: 100%;
+    height: 3px;
+    background-color: #707070;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.pficon2 {
+    grid-area: pf3;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.pfnaam2 {
+    grid-area: naam3;
+    margin-top: 15px;
+}
+
+.pfstatusA1 {
+    grid-area: status3;
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 3px;
+    padding-top: 5px;
+    background-color: #0D7C7B;
+    color: white;
+    max-width: 36px;
+}
+
+.dunnelijn2 {
+    grid-area: lijn4;
+    width: 100%;
+    height: 3px;
+    background-color: #707070;
+    margin-top: 5px;
+}
 
 
 
@@ -362,10 +509,12 @@ b{
     }
     
     .tijdicon, .snelheidicon, .brandstoficon, .watericon {
-    width: 17%;
-    margin-top: 15px;
-    margin-left: 6%;
-}
+        width: 17%;
+        margin-top: 15px;
+        margin-left: 6%;
+    }
+    
+    
   
     
 }
@@ -458,6 +607,7 @@ b{
         padding: 6%;
         width: 86%;
         margin-top: 25px;
+        max-height: 200px;
     }
     
     .afstand {
@@ -511,18 +661,23 @@ b{
         margin-top: 70px;
     }
     
+    .tijdicon, .snelheidicon, .brandstoficon, .watericon {
+        width: 25%;
+        margin-top: 15px;
+        margin-left: 6%;
+    }
+
+    .tijdtekst, .snelheidtekst, .brandstoftekst, .watertekst {
+        font-size: 13pt;
+        margin-top: 20px;
+    }
     
     
-.tijdicon, .snelheidicon, .brandstoficon, .watericon {
-    width: 25%;
-    margin-top: 15px;
-    margin-left: 6%;
-}
+    .lijn1 {
+        margin-bottom: 10px;
+    }
     
-.tijdtekst, .snelheidtekst, .brandstoftekst, .watertekst {
-    font-size: 13pt;
-    margin-top: 20px;
-}
+    
 }    
 
 
@@ -661,6 +816,11 @@ b{
     .afstand > h2 {
         margin-top: -10px;
     }
+    
+    .lijn1 {
+        margin-bottom: 15px;
+    }
+    
 }
 
 
