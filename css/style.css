@@ -16,9 +16,13 @@ h2{
 /*Navigatie */
 
 nav{
-    background-color: #3A3A3A;
+    background-color: #383838;
     min-height: 70px;
     box-shadow: 0px 3px 6px;
+}
+
+nav > p {
+    display: none;
 }
 
 .profilepicmenu {
@@ -28,6 +32,17 @@ nav{
     margin-right: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.pijl {
+    width: 25px;
+}
+
+nav > a{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 40%;
+    color: white;
 }
 
 .logo {
@@ -256,7 +271,22 @@ b{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 899px) and (min-width: 550px) {
+    nav > a{
+    margin-left: 50%;
+}
+    
     .feiten{
         display: grid;
         grid-template-areas: 
@@ -340,6 +370,20 @@ b{
     
 }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
 @media only screen and (max-width: 1313px) and (min-width: 900px) {
@@ -352,6 +396,19 @@ b{
     main > p {
         margin-bottom: 20px;
     }
+    
+    nav > a{
+    display: none;
+}
+    
+    nav > p {
+    display: inherit;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    margin-top: -45px; 
+    margin-left: 76%;    
+}
     
     .feiten{
         display: grid;
@@ -467,6 +524,15 @@ b{
     margin-top: 20px;
 }
 }    
+
+
+
+
+
+
+
+
+
     
 
 
@@ -476,6 +542,19 @@ b{
         margin-right: 10%;
         margin-top: 2%;
     }
+    
+    nav > a{
+    display: none;
+}
+    
+     nav > p {
+    display: inherit;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    margin-top: -45px; 
+    margin-left: 80%;    
+}
     
     .feiten{
         display: grid;
